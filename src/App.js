@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <h1 className="text-3xl font-bold underline">
       Heck Burgers
     </h1>
+    <ItemListContainer/>
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
