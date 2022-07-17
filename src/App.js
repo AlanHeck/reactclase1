@@ -12,7 +12,7 @@ function App() {
       <h1 className="text-3xl font-bold underline">
       Heck Burgers
     </h1>
-    <ItemListContainer/>
+    <ItemListContainer contenedor='Lista contenedora'/>
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
