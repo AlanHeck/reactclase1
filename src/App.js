@@ -14,7 +14,6 @@ function App() {
       Heck Burgers
     </h1>
     <ItemListContainer contenedor='Lista contenedora'/>
-    <ItemCount/>
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
