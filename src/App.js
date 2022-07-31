@@ -1,18 +1,26 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import { useState } from "react";
+
 
 
 function App() {
 
+  const [idDeProductoSeleccionado, setidDeProductoSeleccionado] = useState(undefined);
+
 
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <h1 className="text-3xl font-bold underline">
-      Heck Burgers
-    </h1>
-    <ItemListContainer contenedor='Lista contenedora'/>
+        Heck Burgers
+      </h1>
+      <ItemListContainer contenedor='Lista contenedora' onClickVerMas={setidDeProductoSeleccionado} />
+      <ItemDetailContainer idDeProductoSeleccionado={idDeProductoSeleccionado} />
+
+      {/*<ItemDetailContainer/>*/}
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -28,6 +36,7 @@ function App() {
         </a>
   </header>*/}
     </div>
+
   );
 }
 
